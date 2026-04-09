@@ -192,7 +192,7 @@ elif go == "b":
     print("Hopefully that wasn't a bad idea...")
     enter()
 
-# Break
+
 print("You have an hour and 15 minutes till your next class. What do you want to do?")
 print("a) Study for your next class")
 print("b) Take a short nap")
