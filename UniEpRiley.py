@@ -1,4 +1,155 @@
-print("Welcome to your GPA Simulator!")
+#Pseduocode 
+# #################################
+# STEP 1: thinking before programming (problem analysis)
+#
+# what is the program required to do?
+# - simulate a student's weekly schedule (monday through friday)
+# - allow the user to make choices for classes and activities
+# - update gpa, happiness, and social stats based on choices
+# - display final stats at the end of the week
+#
+# key goals:
+# - correct input handling (only accept valid choices)
+# - correct stat updates after each decision
+# - correct order of days and events
+# - clear output messages for user interaction
+#
+# key problems to be aware of:
+# - repeated structure for each day (classes and choices)
+# - need to validate user input multiple times
+# - avoid missing stat updates
+#
+# plan to solve the problem:
+# - create variables for gpa, happiness, and social
+# - create a helper function enter() to pause the program
+# - handle each day separately (monday through friday)
+# - for each class/activity:
+#     ask for input
+#     validate input
+#     update stats
+# - display final results at the end
+
+###################################
+# STEP 2: procedural decomposition (break the program into pieces)
+#
+# main()
+# - controls the entire simulation
+# - calls each day function in order
+#
+# monday(), tuesday(), wednesday(), thursday(), friday()
+# - handle all events and choices for each day
+#
+# enter()
+# - pauses the program until user presses enter
+#
+# why this design avoids redundancy:
+# - each day is grouped into its own function
+# - repeated pause logic is handled by enter()
+# - input validation structure reused logically
+
+###################################
+# a. problem decomposition:
+#
+# the program consists of 5 days
+#
+# each day includes:
+# - multiple classes or activities
+# - user choices (a/b or a/b/c)
+# - stat updates based on choices
+#
+# pattern:
+# input → validate → update stats → continue
+
+###################################
+# b. program pseudocode:
+
+
+#def main():
+    #initialize stats
+    #get user name
+    #monday()
+    #tuesday()
+    #wednesday()
+    #thursday()
+    #friday()
+    #display final stats
+
+#def enter():
+    #wait for user input
+
+#def monday():
+    #handle comp 170
+    #handle break
+    #handle theology
+    #handle math
+
+#def tuesday():
+    #handle comp 163
+    #handle cjc
+    #handle chinese culture
+
+#def wednesday():
+    #handle comp 170
+    #handle theology
+    #handle math
+
+#def thursday():
+    #handle comp 163
+    #handle cjc
+    #handle chinese culture
+
+#def friday():
+    #handle comp 170
+    #handle theology
+    #handle math
+
+
+###################################
+# program pseudocode & structure for a class block
+#
+# pseudocode:
+#   display class name
+#   input choice
+#   while input invalid:
+#       input again
+#   if choice == "a":
+#       increase stats
+#   else:
+#       decrease stats
+#   call enter()
+
+###################################
+# program pseudocode & structure for break block
+#
+# pseudocode:
+#   display options (a/b/c)
+#   input choice
+#   while invalid:
+#       input again
+#   if a:
+#       increase gpa and happiness
+#   elif b:
+#       increase happiness
+#   else:
+#       increase social, decrease happiness
+#   call enter()
+
+###################################
+# final output pseudocode
+#
+# display "end of week stats"
+# display name
+# display gpa
+# display happiness
+# display social
+
+###################################
+# main()
+
+
+#MainCode 
+
+Print("Welcome to your GPA Simulator!")
 
 name = input("What is your name? ")
 print("Hello", name, "! Let's go through your week.\n")
