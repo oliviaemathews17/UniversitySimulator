@@ -149,7 +149,7 @@
 
 #MainCode 
 
-Print("Welcome to your GPA Simulator!")
+print("Welcome to your GPA Simulator!")
 
 name = input("What is your name? ")
 print("Hello", name, "! Let's go through your week.\n")
