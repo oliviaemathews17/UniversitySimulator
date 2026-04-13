@@ -3965,6 +3965,20 @@ def intro(day):
 #    show_stats(g, h, so)
 #   return g, h, so
 
+# game layouts:
+# a variable is initialized to keep track of how many points the user gets
+#asks for user input
+#use a while loop that forces the user to submit another answer if it doesn't fit the choices
+# if the user picks the right one, they get a point
+#else, they get no points
+#the score is how many points the user got divided by the number of questions and then multiplied by 100
+#
+#to do type in questions where the user type in the answer:
+# a for loop is initilized with a range of 3 for 3 tries.
+# a nested if condition checks of the user typed in the right answer
+# if they did then a point is added
+# else, another if conditions to make sure that the amount of tries the user has isn't including 0
+# if it isn;t 0 then they can try inputing another anser again
 
 def monday(g, h, so):
     intro('monday')
